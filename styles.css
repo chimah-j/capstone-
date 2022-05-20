@@ -1,0 +1,198 @@
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+list-style: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width:768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+background-color:black;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+
+/* FORM section */
+#sign-up {
+  margin-top: 40PX;
+padding: 30px;
+}
+#form{
+padding: 30px;
+}
+
+#birthday {
+  margin: 20px;
+
+}
+
+#form-group {
+  margin: 20px;
+
+}
+ .bi{
+position:relative;
+left: 450px;
+bottom:40px;
+cursor: pointer;
+transform: translate(0,-50%);
+}
+.fa{
+font-size: 20px;
+}
+/* button */
+.btn {
+  margin-top: 20px;
+}
+
+
+
+
+body {
+
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#title {
+margin: 0;
+
+}
+
+p {
+  color: white;
+text-align: center;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 10px;
+
+}
+
+.container-fluid {
+margin-top: 40PX;
+  padding: 3% 30%;
+
+
+}
+h5{
+  font-family: 'Montserrat', sans-serif;
+
+  color: white;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+}
+
+h4{
+color: white;
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+}
+
+
+
+.form-control{
+color: white;
+}
+
+.row{
+margin: 10%;
+}
